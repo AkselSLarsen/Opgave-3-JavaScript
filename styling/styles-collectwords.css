@@ -1,0 +1,13 @@
+.search-area {
+    position: absolute;
+
+    bottom: 75vh;
+    left: 10vw;
+    height: 10vh;
+    width: 60vw;
+
+    flex: auto;
+}
+.search-bar {
+    display: inline;
+}

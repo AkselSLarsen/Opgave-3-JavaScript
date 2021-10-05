@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="da-DK">
+	<head>
+		<title>CollectWords</title> <!-- Names the tab -->
+		<meta charset="utf-8">
+		
+		<!-- <link rel="stylesheet" href="styling/reset.css"> <!-- Standard reset file by Eric Meyer, that makes the webpage look the same in different browsers -->
+		<link rel="stylesheet" href="styling/generic.css"> <!-- A standard styling file shared by more pages to avoid code duplication -->
+		<link rel="stylesheet" href="styling/styles-collectwords.css"> <!-- The styles specific to this page -->
+		
+		<script src="https://unpkg.com/vue@next"></script>
+
+	</head>
+	<body>
+		<main>
+			<div class="search-area" id="app">
+				<input type="text" id="search-bar" name="search-bar" v-model="current">
+				<input type="button" id="save-button" value="Show" @click="addStrings()">
+				<input type="button" id="clear-button" value="Clear" @click="clearContent()">
+				<br>
+				<ol id="output-ol"></ol>
+				<table id="output-table"></table>
+			</div>
+		</main>
+		<script src="logic/scripts.js"></script>
+		<script>app.mount('#app');</script>
+	</body>
+</html>
